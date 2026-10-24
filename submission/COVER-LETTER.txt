@@ -1,0 +1,37 @@
+24 October 2026
+
+Editors, Annals of Mathematics
+
+Dear Editors,
+
+Please consider "Unbounded strong-product ratios for the Grundy domination
+number" for publication in the Annals of Mathematics.
+
+The paper disproves the strong-product multiplicativity conjecture of Bresar,
+Bujtas, Gologranc, Klavzar, Kosmrlj, Patkos, Tuza and Vizer in a quantitative
+form: no constant multiple of the product of the two factor parameters is
+an upper bound. Explicit graphs on five-element subsets have factor bounds
+m and binom(m,2), while their product has a legal sequence of length binom(m,5).
+The proof combines a triangular rank bound for exact neighbourhood support
+with two finite-field incidence matrices. The underlying congruence method
+is classical and is credited to Alon; the manuscript proves the application
+in full rather than relying on an external assertion about Shannon capacity.
+
+A separate elementary half-graph argument determines gamma_gr(H_N) for every
+N >= 6 and yields a counterexample on 114 vertices with the octahedron as
+the first factor. The main results do not depend on computer calculations.
+For comparison, an appendix describes a Lean certificate for the earlier
+N=21 example. Its scope is expressly distinguished from the two general proofs.
+
+The original preprint is https://hexagonmath.org/2610.00494v1. Its original
+computational development is archived at https://doi.org/10.5281/zenodo.23378021.
+The submission revision and reproduction files are at
+https://github.com/creelie/Paper_1. This revision has the preprint DOI https://doi.org/10.5281/zenodo.23607502.
+The manuscript describes AI assistance and
+identifies the affected proof sections in accordance with the journal's policy.
+
+Thank you for considering the manuscript.
+
+Deep Bhattacharjee
+d.bhattacharjee@erl-forschung.de
+ORCID: 0000-0003-0466-750X

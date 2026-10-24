@@ -1,0 +1,11 @@
+ok    octMask = closed neighbourhoods of K_{2,2,2}
+ok    hMask = closed neighbourhoods of H_21
+ok    octLayers: every tree is a binary search tree
+ok    octLayers: the trees hold exactly the reachable dominated sets
+ok    octLayers: layer sizes [1, 6, 1]
+ok    hLayers: every tree is a binary search tree
+ok    hLayers: the trees hold exactly the reachable dominated sets
+ok    hLayers: layer sizes [1, 21, 210, 1023, 1482, 1302, 848, 419, 150, 22, 1]
+ok    hSeq is the sequence of the paper
+ok    prodSeq is (j mod 3, j), j < 21, with (g, h) = 21 g + h
+check_lean_data: all checks passed

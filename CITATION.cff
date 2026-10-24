@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "Please cite the manuscript using its version-specific archival DOI."
+type: article
+title: "Unbounded strong-product ratios for the Grundy domination number"
+authors:
+  - family-names: Bhattacharjee
+    given-names: Deep
+    orcid: "https://orcid.org/0000-0003-0466-750X"
+version: 1.2.0
+doi: "10.5281/zenodo.23607502"
+date-released: 2026-10-24
+license: MIT
+url: "https://github.com/creelie/Paper_1"
+repository-code: "https://github.com/creelie/Paper_1"
+keywords:
+  - Grundy domination number
+  - strong product
+  - dominating sequence
+  - finite-field incidence matrix

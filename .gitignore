@@ -1,0 +1,15 @@
+lean/.lake/
+**/__pycache__/
+*.aux
+*.log
+*.out
+*.blg
+*.rpi
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+manuscript/main.pdf
+manuscript/figures/*.aux
+manuscript/figures/*.log
+*.exe
+*.zip

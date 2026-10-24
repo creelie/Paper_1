@@ -1,0 +1,25 @@
+{
+  "checks": [
+    {
+      "check": "counterexample",
+      "exit_code": 0,
+      "seconds": 1.453
+    },
+    {
+      "check": "lean-data",
+      "exit_code": 0,
+      "seconds": 0.115
+    },
+    {
+      "check": "all-parameter-finite-checks",
+      "exit_code": 0,
+      "seconds": 4.232
+    },
+    {
+      "check": "regenerate-layer-certificate",
+      "equal_after_line_ending_normalization": true
+    }
+  ],
+  "lean_scope": "Lean was not rebuilt by this invocation. Use --lean for a fresh build.",
+  "scope": "Finite checks corroborate the two written universal proofs; they do not prove the universal statements by themselves."
+}

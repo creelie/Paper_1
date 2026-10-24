@@ -1,0 +1,75 @@
+\providecommand{\bysame}{\leavevmode\hbox to3em{\hrulefill}\thinspace}
+\providecommand{\noopsort}[1]{}
+\providecommand{\mr}[1]{\href{http://www.ams.org/mathscinet-getitem?mr=#1}{MR~#1}}
+\providecommand{\zbl}[1]{\href{http://www.zentralblatt-math.org/zmath/en/search/?q=an:#1}{Zbl~#1}}
+\providecommand{\jfm}[1]{\href{http://www.emis.de/cgi-bin/JFM-item?#1}{JFM~#1}}
+\providecommand{\arxiv}[1]{\href{http://www.arxiv.org/abs/#1}{arXiv~#1}}
+\providecommand{\doi}[1]{\url{https://doi.org/#1}}
+\providecommand{\MR}{\relax\ifhmode\unskip\space\fi MR }
+% \MRhref is called by the amsart/book/proc definition of \MR.
+\providecommand{\MRhref}[2]{%
+  \href{http://www.ams.org/mathscinet-getitem?mr=#1}{#2}
+}
+\providecommand{\href}[2]{#2}
+\begin{thebibliography}{1}
+
+\bibitem{Alon}
+\bgroup\scshape{}N.~Alon\egroup{}, The {Shannon} capacity of a union,
+  \emph{Combinatorica} \textbf{18} no.~3 (1998), 301--310.
+  \doi{10.1007/PL00009824}.
+
+\bibitem{BDKW}
+\bgroup\scshape{}K.~Bell\egroup{}, \bgroup\scshape{}K.~Driscoll\egroup{},
+  \bgroup\scshape{}E.~Krop\egroup{}, and \bgroup\scshape{}K.~Wolff\egroup{},
+  {Grundy} domination of forests and the strong product conjecture,  \emph{The
+  Electronic Journal of Combinatorics} \textbf{28} no.~2 (2021), P2.12.
+  \doi{10.37236/9507}.
+
+\bibitem{Preprint}
+\bgroup\scshape{}D.~Bhattacharjee\egroup{}, The {Grundy} domination number is
+  not multiplicative on strong products, 2026, Preprint, Hexagon 2610.00494v1.
+  Available at \url{https://hexagonmath.org/2610.00494v1}.
+
+\bibitem{Ar}
+\bgroup\scshape{}D.~Bhattacharjee\egroup{}, The {Grundy} domination number is
+  not multiplicative on strong products: {Lean} 4 development, programs and
+  data, Zenodo, 2026, Version 1.0.0. \doi{10.5281/zenodo.23378021}.
+
+\bibitem{Revision}
+\bgroup\scshape{}D.~Bhattacharjee\egroup{}, Unbounded strong-product ratios for
+  the {Grundy} domination number: submission sources and verification, 2026,
+  Revision of 24 October 2026. \doi{10.5281/zenodo.23607502}.
+
+\bibitem{BBG}
+\bgroup\scshape{}B.~Bre{\v s}ar\egroup{},
+  \bgroup\scshape{}C.~Bujt{\'a}s\egroup{},
+  \bgroup\scshape{}T.~Gologranc\egroup{}, \bgroup\scshape{}S.~Klav{\v
+  z}ar\egroup{}, \bgroup\scshape{}G.~Ko{\v s}mrlj\egroup{},
+  \bgroup\scshape{}B.~Patk{\'o}s\egroup{}, \bgroup\scshape{}Z.~Tuza\egroup{},
+  and \bgroup\scshape{}M.~Vizer\egroup{}, Dominating sequences in grid-like and
+  toroidal graphs,  \emph{The Electronic Journal of Combinatorics} \textbf{23}
+  no.~4 (2016), P4.34. \doi{10.37236/6269}.
+
+\bibitem{BGMRR}
+\bgroup\scshape{}B.~Bre{\v s}ar\egroup{},
+  \bgroup\scshape{}T.~Gologranc\egroup{}, \bgroup\scshape{}M.~Milani{\v
+  c}\egroup{}, \bgroup\scshape{}D.~F. Rall\egroup{}, and
+  \bgroup\scshape{}R.~Rizzi\egroup{}, Dominating sequences in graphs,
+  \emph{Discrete Mathematics} \textbf{336} (2014), 22--36.
+  \doi{10.1016/j.disc.2014.07.016}.
+
+\bibitem{HS}
+\bgroup\scshape{}R.~Herrman\egroup{} and \bgroup\scshape{}S.~G.~Z.
+  Smith\egroup{}, A proof of the {Grundy} domination strong product conjecture,
+  2022, Withdrawn, version 2, 12 January 2023. Available at
+  \url{https://arxiv.org/abs/2212.04565v2}.
+
+\bibitem{MU}
+\bgroup\scshape{}L.~de~Moura\egroup{} and \bgroup\scshape{}S.~Ullrich\egroup{},
+  The {Lean} 4 theorem prover and programming language,  in \emph{Automated
+  Deduction---CADE 28} (\bgroup\scshape{}A.~Platzer\egroup{} and
+  \bgroup\scshape{}G.~Sutcliffe\egroup{}, eds.), \emph{Lecture Notes in
+  Computer Science} \textbf{12699}, Springer, Cham, 2021, pp.~625--635.
+  \doi{10.1007/978-3-030-79876-5_37}.
+
+\end{thebibliography}
