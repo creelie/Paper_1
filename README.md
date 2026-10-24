@@ -12,6 +12,8 @@ Both general theorems have complete written proofs. Their proofs use no unproved
 external theorem or computer enumeration. The incidence method is credited to
 Alon's classical work; its adaptation here requires exact neighbourhood support.
 
+Complete ZIP: https://github.com/creelie/Paper_1/releases/download/v1.2.0/Paper_1_Annals_submission_v1.2.0.zip
+
 ## Submission files
 
 - `Paper_1_Annals.pdf`: PDF for the editorial system.
@@ -25,8 +27,11 @@ Alon's classical work; its adaptation here requires exact neighbourhood support.
 - `verification/current/`: current verification outputs; other verification files came from the input archive.
 - `provenance/INPUT.json`: input archive, hashes and earlier publication links.
 
-The final ZIP is intentionally deferred until the DOI of this revision is confirmed.
-The old DOI identifies version 1.0.0 and must not be represented as this revision's DOI.
+This revision is published on Zenodo: https://doi.org/10.5281/zenodo.23607502 .
+The complete submission ZIP is created only after that publication was confirmed.
+The earlier DOI below identifies version 1.0.0.
+
+The fresh Lean build and 25-declaration axiom audit passed. See `FORMAL-STATUS.md`.
 
 ## Reproduce
 

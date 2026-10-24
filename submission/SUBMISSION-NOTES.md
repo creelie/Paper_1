@@ -20,7 +20,8 @@ the portal asks. This package does not assert facts about those matters that wer
 not provided. Review the listed former affiliation and contact details.
 
 The earlier DOI is a source-archive DOI, not the DOI of the present revision.
-The current revision DOI must be confirmed before the requested final ZIP is made.
+The current revision DOI, https://doi.org/10.5281/zenodo.23607502, is confirmed
+published. The requested final ZIP is constructed after this confirmation.
 
 No acceptance probability is assigned. Annals is an ambitious editorial target:
 the construction resolves a specialized graph-invariant conjecture by an elementary

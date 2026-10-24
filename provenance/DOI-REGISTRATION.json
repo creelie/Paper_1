@@ -3,8 +3,13 @@
   "record_id": 23607502,
   "concept_doi": "10.5281/zenodo.23378020",
   "version": "1.2.0",
-  "status": "reserved",
+  "status": "published",
   "draft_url": "https://zenodo.org/uploads/23607502",
   "source": "Zenodo DOI reservation visibly confirmed in the signed-in deposit form on 24 October 2026.",
-  "zip_created": false
+  "record_url": "https://zenodo.org/records/23607502",
+  "record_state": "done",
+  "verified_at_utc": "2026-10-24T01:18:31.197676+00:00",
+  "pdf_sha256": "ee1f302ef71e77afd5e2c544cba4cbb5cf9a1f5ba3c490906e03df6b55bd75a7",
+  "pdf_md5": "md5:34acc65481bc80aa88b1511274983368",
+  "zip_existed_at_doi_verification": false
 }

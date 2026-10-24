@@ -18,8 +18,23 @@
     {
       "check": "regenerate-layer-certificate",
       "equal_after_line_ending_normalization": true
+    },
+    {
+      "check": "fresh-lean-build",
+      "exit_code": 0,
+      "counterexample_build_seconds": 858,
+      "jobs": 7
+    },
+    {
+      "check": "lean-axioms",
+      "exit_code": 0
+    },
+    {
+      "check": "25-declaration-axiom-audit",
+      "exit_code": 0
     }
   ],
-  "lean_scope": "Lean was not rebuilt by this invocation. Use --lean for a fresh build.",
-  "scope": "Finite checks corroborate the two written universal proofs; they do not prove the universal statements by themselves."
+  "lean_scope": "Fresh build from supplied sources succeeded. N=21 certificate only. All 25 audited declarations use at most propext, Classical.choice and Quot.sound; no native_decide or sorry axiom.",
+  "scope": "Finite checks corroborate the two written universal proofs; they do not prove the universal statements by themselves.",
+  "lean_version": "Lean (version 4.34.1, x86_64-w64-windows-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)"
 }
