@@ -32,8 +32,8 @@
     },
     {
       "path": "build-verification.json",
-      "bytes": 1127,
-      "sha256": "1c42418e9cb6220cd4932f4c8edbf74607ac285fd8dd46c7a8d394367808522a"
+      "bytes": 1101,
+      "sha256": "4a68bb184fbfa2d809dfda6989b3aaf660fa06c506c6468bc697b1e28414938b"
     },
     {
       "path": "coverletterjournal.pdf",
@@ -72,8 +72,8 @@
     },
     {
       "path": "submission-metadata.json",
-      "bytes": 5555,
-      "sha256": "ccb2ae4aeb9848d89d38800750032225b96f9fa158a15b14d7ff11f298276c90"
+      "bytes": 5486,
+      "sha256": "d026273cbfd6febc80a4c3e58c81281e18d7e059266620cabdb4f5ff993a2065"
     },
     {
       "path": "Unbounded_strong-product_ratios_for_the_Grundy_domination_number.pdf",
