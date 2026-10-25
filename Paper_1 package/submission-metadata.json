@@ -1,0 +1,69 @@
+{
+  "number": 1,
+  "title": "Unbounded strong-product ratios for the Grundy domination number",
+  "slug": "Unbounded_strong-product_ratios_for_the_Grundy_domination_number",
+  "source": "C:/FNL_2/Annals/Paper_1/manuscript",
+  "pdf": "C:/FNL_2/Annals/Paper_1/Paper_1_Annals.pdf",
+  "repo": "Paper_1",
+  "local_repo": "C:/FNL_2/Annals/Paper_1",
+  "repo_package_dir": "Paper_1 package",
+  "next_version": "1.3.0",
+  "manuscript_doi": "10.5281/zenodo.23607502",
+  "preprint": "https://hexagonmath.org/2610.00494v1",
+  "primary_subject": "math.CO",
+  "cross_list": [],
+  "msc2020": [
+    "05C69",
+    "05C76"
+  ],
+  "tags": [
+    "Grundy domination number",
+    "strong product",
+    "dominating sequences",
+    "finite-field incidence matrices",
+    "graph products"
+  ],
+  "journal": "Journal of Combinatorial Theory, Series B",
+  "journal_slug": "journal-of-combinatorial-theory-series-b",
+  "journal_scope_url": "https://shop.elsevier.com/journals/journal-of-combinatorial-theory-series-b/0095-8956",
+  "journal_fit": "A graph-theoretic counterexample and an unbounded family, with exact strong-product and domination results, match the journal's graph and discrete-structure scope.",
+  "contribution": "The paper proves that strong-product ratios for the Grundy domination number are unbounded, using an explicit two-field incidence construction. It also determines an all-parameter graph family and supplies a 114-vertex counterexample to multiplicativity. The general proofs are elementary and independent of finite computation.",
+  "ai_scope": "Claude through Claude Code assisted the original computations, finite Lean development and drafting. ChatGPT assisted the exact-support rank argument, two-field construction, all-parameter half-graph count and explicit footprints. OpenAI Codex assisted proof auditing, independent checks, organization, references and typesetting.",
+  "formalization_scope": "The Lean certificate verifies the original finite N=21 counterexample. The general unbounded-ratio theorem and all-parameter formula are written proofs, not a general Lean formalisation.",
+  "formalization_urls": [
+    "https://github.com/creelie/Paper_1/tree/v1.2.0/lean"
+  ],
+  "tools": [
+    "Anthropic Claude / Claude Code",
+    "OpenAI ChatGPT",
+    "OpenAI Codex",
+    "Lean 4",
+    "Python",
+    "LaTeX / pdfLaTeX"
+  ],
+  "authors": [
+    {
+      "name": "Deep Bhattacharjee",
+      "orcid": "0000-0003-0466-750X",
+      "affiliation": "Formerly, Electro-Gravitational Space Propulsion Laboratory (EGSPL), Bhubaneswar, Odisha 751030, India",
+      "email": "itsdeep@live.com"
+    }
+  ],
+  "abstract_tex": "We prove that the ratio of the Grundy domination number of a strong product to the product of the Grundy domination numbers of its factors is unbounded over nonempty finite graphs. For each integer $m\\ge5$, we construct two graphs on the five-element subsets of an $m$-element set. Their Grundy domination numbers are at most $m$ and $\\binom m2$, whereas their strong product has an independent set of size $\\binom m5$. Incidence matrices over two finite fields give a self-contained proof. We also determine the Grundy domination number of the graph on $\\{0,\\ldots,N-1\\}$ with adjacency $|u-v|\\equiv2\\pmod3$: it is $\\lfloor(N+1)/3\\rfloor+3$ for every $N\\ge6$. An explicit legal sequence in its product with the octahedron gives a counterexample on $114$ vertices to the strong-product multiplicativity conjecture. Both general results have elementary proofs independent of computation. A separate Lean certificate concerns one finite example.",
+  "abstract_plain": "We prove that the ratio of the Grundy domination number of a strong product to the product of the Grundy domination numbers of its factors is unbounded over nonempty finite graphs. For each integer m>=5, we construct two graphs on the five-element subsets of an m-element set. Their Grundy domination numbers are at most m and binomial m2, whereas their strong product has an independent set of size binomial m5. Incidence matrices over two finite fields give a self-contained proof. We also determine the Grundy domination number of the graph on 0,ldots,N-1 with adjacency |u-v|equiv2pmod3: it is floor((N+1)/3)+3 for every N>=6. An explicit legal sequence in its product with the octahedron gives a counterexample on 114 vertices to the strong-product multiplicativity conjecture. Both general results have elementary proofs independent of computation. A separate Lean certificate concerns one finite example.",
+  "human_understanding": "All parts of this contribution have been checked and understood by a human.",
+  "human_understanding_basis": "Explicit declaration by the user in this conversation on 25 October 2026.",
+  "text_classification": "A mix of human-written and AI-generated",
+  "primary_pdf": "Unbounded_strong-product_ratios_for_the_Grundy_domination_number.pdf",
+  "tex_zip": "Unbounded_strong-product_ratios_for_the_Grundy_domination_numbertex.zip",
+  "pdf_sha256": "ee1f302ef71e77afd5e2c544cba4cbb5cf9a1f5ba3c490906e03df6b55bd75a7",
+  "tex_zip_sha256": "0213c701231f5e6e844706f8cd2e9afdc256a20a2b97645b5d3c013486b7e264",
+  "pages": 11,
+  "hexagon_license": "CC BY 4.0 (manuscript record)",
+  "row_or_margin_line_numbers": false,
+  "source_changes_for_upload": [],
+  "journal_submission_performed": false,
+  "doi_of_new_package": null,
+  "package_release_pending": true,
+  "package_license": "MIT for repository code; manuscript preprint available under CC BY 4.0"
+}

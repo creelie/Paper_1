@@ -1,5 +1,10 @@
 # Unbounded strong-product ratios for the Grundy domination number
 
+## Current upload package
+
+[Paper_1 package](Paper_1%20package/README.md) contains the reviewed Hexagon/Overleaf source ZIP, the current PDF, AI provenance, complete Hexagon fields and supporting files for **Journal of Combinatorial Theory, Series B**. The package records the current proof/check scope and has no margin line numbers. No journal submission or acceptance is claimed. Version: 1.3.0.
+
+
 Deep Bhattacharjee. Annals of Mathematics submission preparation, 24 October 2026.
 
 The main theorem gives explicit graphs A_m and B_m on the five-element subsets of [m]

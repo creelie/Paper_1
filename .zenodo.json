@@ -1,18 +1,48 @@
 {
-  "title": "Unbounded strong-product ratios for the Grundy domination number",
-  "upload_type": "publication",
-  "publication_type": "preprint",
-  "description": "Explicit finite graphs have unbounded ratios of their strong-product Grundy domination number to the product of the factor Grundy domination numbers. Two finite-field incidence matrices give a complete elementary proof. A separate half-graph proof determines gamma_gr(H_N)=floor((N+1)/3)+3 for all N>=6 and gives a 114-vertex counterexample with the octahedron. The Lean certificate covers only the original N=21 example. This is a manuscript prepared for submission; no journal acceptance is claimed. AI assistance and affected proof locations are disclosed in the manuscript.",
-  "creators": [{"name": "Bhattacharjee, Deep", "orcid": "0000-0003-0466-750X"}],
-  "version": "1.2.0",
-  "doi": "10.5281/zenodo.23607502",
-  "publication_date": "2026-10-24",
+  "title": "Unbounded strong-product ratios for the Grundy domination number — submission package",
+  "upload_type": "software",
+  "description": "<p>Unbounded strong-product ratios for the Grundy domination number. Hexagon/Overleaf and Journal of Combinatorial Theory, Series B submission preparation, version 1.3.0. The reviewed folder Paper_1 package contains the article PDF, a minimal compilable TeX ZIP, AI provenance, Hexagon fields, journal details, an unsent cover letter with editable source, and an author-prepared AI disclosure. All PDFs have no row or margin line numbers. No journal submission or acceptance is claimed.</p><p>The paper proves that strong-product ratios for the Grundy domination number are unbounded, using an explicit two-field incidence construction. It also determines an all-parameter graph family and supplies a 114-vertex counterexample to multiplicativity. The general proofs are elementary and independent of finite computation.</p><p>Verification scope: The Lean certificate verifies the original finite N=21 counterexample. The general unbounded-ratio theorem and all-parameter formula are written proofs, not a general Lean formalisation.</p><p>Original preprint: https://hexagonmath.org/2610.00494v1. Earlier manuscript/source DOI: 10.5281/zenodo.23607502. Original attribution and component licences are preserved. Human-understanding and mixed-text declarations record the submitting author's explicit statement on 25 October 2026. The standalone AI declaration is author-prepared, not an official signed publisher form.</p>",
+  "creators": [
+    {
+      "name": "Bhattacharjee, Deep",
+      "orcid": "0000-0003-0466-750X",
+      "affiliation": "Formerly, Electro-Gravitational Space Propulsion Laboratory (EGSPL), Bhubaneswar, Odisha 751030, India"
+    }
+  ],
+  "version": "1.3.0",
   "access_right": "open",
   "license": "MIT",
-  "keywords": ["Grundy domination number", "strong product", "dominating sequence", "finite-field incidence matrix"],
+  "keywords": [
+    "Grundy domination number",
+    "strong product",
+    "dominating sequences",
+    "finite-field incidence matrices",
+    "graph products",
+    "05C69",
+    "05C76"
+  ],
   "related_identifiers": [
-    {"identifier": "https://hexagonmath.org/2610.00494v1", "relation": "isNewVersionOf", "scheme": "url"},
-    {"identifier": "10.5281/zenodo.23378021", "relation": "isNewVersionOf", "scheme": "doi"},
-    {"identifier": "https://github.com/creelie/Paper_1", "relation": "isSupplementTo", "scheme": "url"}
-  ]
+    {
+      "identifier": "https://hexagonmath.org/2610.00494v1",
+      "relation": "isNewVersionOf",
+      "scheme": "url"
+    },
+    {
+      "identifier": "10.5281/zenodo.23378021",
+      "relation": "isNewVersionOf",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "https://github.com/creelie/Paper_1",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    },
+    {
+      "identifier": "10.5281/zenodo.23607502",
+      "scheme": "doi",
+      "relation": "isSupplementTo"
+    }
+  ],
+  "publication_date": "2026-10-25",
+  "notes": "Component licence notices in the original repository remain authoritative. The article is already available under the existing Hexagon CC BY 4.0 record. New package DOI is assigned by Zenodo after the GitHub release; no earlier DOI is reused as the new release DOI."
 }
