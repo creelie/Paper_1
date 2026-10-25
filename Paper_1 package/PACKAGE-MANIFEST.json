@@ -1,5 +1,5 @@
 {
-  "status": "reviewed and compiled package; release DOI pending",
+  "status": "published and checksum-verified package; DOI receipt added after publication",
   "paper_number": 1,
   "title": "Unbounded strong-product ratios for the Grundy domination number",
   "authors": [
@@ -15,7 +15,7 @@
   "planned_release": "v1.3.0",
   "journal": "Journal of Combinatorial Theory, Series B",
   "prior_manuscript_or_source_doi": "10.5281/zenodo.23607502",
-  "new_package_doi": null,
+  "new_package_doi": "10.5281/zenodo.23629621",
   "row_or_margin_line_numbers": false,
   "journal_submission_performed": false,
   "hexagon_submission_performed": false,
@@ -29,6 +29,11 @@
       "path": "aiprovinance.md",
       "bytes": 2090,
       "sha256": "a0fc5c22d20a46f1358ac84a97a640e99b86be4c5cd0bb0b67caa1a2e0c8af1b"
+    },
+    {
+      "path": "ARCHIVE-DOI.md",
+      "bytes": 1150,
+      "sha256": "b7a7a59a77609ac9ebf5ef3ad175fc3e544e62f8f9d0bc411afe03fbb3ae58b3"
     },
     {
       "path": "build-verification.json",
@@ -47,8 +52,8 @@
     },
     {
       "path": "hexagonsubmissionform.md",
-      "bytes": 4658,
-      "sha256": "4934860c7542bd148910d8f362b601f2f0457570f63998a50a1d82b83c36ae74"
+      "bytes": 4869,
+      "sha256": "8a778f75e18b2a81ef191efc3ba4ff192cc2f51a7be480de1fbd4526dab1318e"
     },
     {
       "path": "journalaideclarationform.pdf",
@@ -62,18 +67,23 @@
     },
     {
       "path": "journalsubmissiondetails.md",
-      "bytes": 4473,
-      "sha256": "b9ad7a1ee4862d08851463fb62b557fdbacdcee5eeca72c9bae575a297be4bab"
+      "bytes": 4684,
+      "sha256": "4589a720ff112ef164e50c5c718f49af6bdc85e4c50b214687cd9669b0ef30b0"
     },
     {
       "path": "README.md",
-      "bytes": 1325,
-      "sha256": "1ae419b8d52b9743467aa4c1ce51860cab8a6e4db0ceebb61068039f846509f0"
+      "bytes": 1536,
+      "sha256": "426ef060bc40062e36ff07dbf8807e99a2d43a5d507d2c6dca434206fcfc9598"
+    },
+    {
+      "path": "release-verification.json",
+      "bytes": 1444,
+      "sha256": "8f918aabf89bd35bae5581e335a3d501306f6fa7a3602f984c59ed0eeb187adc"
     },
     {
       "path": "submission-metadata.json",
-      "bytes": 5486,
-      "sha256": "d026273cbfd6febc80a4c3e58c81281e18d7e059266620cabdb4f5ff993a2065"
+      "bytes": 5706,
+      "sha256": "f52db0d0b63a6ca109be70dcd457603a25b077889a91ee87ad84a25265604311"
     },
     {
       "path": "Unbounded_strong-product_ratios_for_the_Grundy_domination_number.pdf",
@@ -85,5 +95,10 @@
       "bytes": 107037,
       "sha256": "0213c701231f5e6e844706f8cd2e9afdc256a20a2b97645b5d3c013486b7e264"
     }
+  ],
+  "release_commit": "7154fda1d9e7b69cbf7acca473ab15eaf4bd57e5",
+  "post_archive_receipt_files": [
+    "release-verification.json",
+    "ARCHIVE-DOI.md"
   ]
 }
