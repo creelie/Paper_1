@@ -1,67 +1,68 @@
 # Unbounded strong-product ratios for the Grundy domination number
 
-## Current upload package
+Deep Bhattacharjee. Final revision, 26 October 2026.
 
-[Paper_1 package](Paper_1%20package/README.md) contains the reviewed Hexagon/Overleaf source ZIP, the current PDF, AI provenance, complete Hexagon fields and supporting files for **Journal of Combinatorial Theory, Series B**. The package records the current proof/check scope and has no margin line numbers. No journal submission or acceptance is claimed. Version: 1.3.0. Package DOI: [10.5281/zenodo.23629621](https://doi.org/10.5281/zenodo.23629621).
+A sequence of vertices of a graph is legal when every vertex in it dominates some vertex
+that none of the earlier ones dominated, and the Grundy domination number of the graph is
+the length of its longest legal sequence. Brešar, Bujtás, Gologranc, Klavžar, Košmrlj,
+Patkós, Tuza and Vizer proved in 2016 that the Grundy domination number of a strong product
+is at least the product of the Grundy domination numbers of the two factors, and conjectured
+that equality always holds. The paper shows that the conjecture is false, and false by an
+unbounded factor: for every number C there are graphs whose strong product has Grundy
+domination number more than C times the product of the two factors. The graphs are built on
+the five-element subsets of an m-element set, with adjacency decided by the size of the
+intersection; incidence matrices over the fields with two and three elements bound the two
+factors by m and binom(m,2), while the diagonal of the product is an independent set of
+size binom(m,5). The paper also computes the Grundy domination number of the graph H_N on
+{0, ..., N-1} in which u and v are adjacent when |u-v| = 2 (mod 3): it is floor((N+1)/3)+3
+for every N >= 6. Its strong product with the octahedron has a legal sequence of length N,
+so the conjecture already fails for N = 19, on a graph with 114 vertices, and for every
+N >= 21. Every statement is proved by hand; the programs here only recompute the small
+cases, and no statement of the paper rests on them.
 
+The counterexample was first made public on 14 October 2026 as release v1.0.0 of
+[creelie/grundy-strong-product](https://github.com/creelie/grundy-strong-product), archived
+on Zenodo as [10.5281/zenodo.23378021](https://doi.org/10.5281/zenodo.23378021). An earlier
+and incomplete version of the paper appeared on Hexagon as
+[hexagon:2610.00494](https://hexagonmath.org/2610.00494) on 23 October 2026; it gave one
+counterexample and relied on a computer certificate for the Grundy domination number of
+H_21. The revisions that followed are the releases v1.2.0 and v1.3.0 of this repository,
+archived as [10.5281/zenodo.23607502](https://doi.org/10.5281/zenodo.23607502) and
+[10.5281/zenodo.23629621](https://doi.org/10.5281/zenodo.23629621). This revision replaces
+them: the Grundy domination number of H_N is computed by hand for every N >= 6, the ratio is
+shown to be unbounded, and nothing rests on a computer.
 
-Deep Bhattacharjee. Annals of Mathematics submission preparation, 24 October 2026.
+## Layout
 
-The main theorem gives explicit graphs A_m and B_m on the five-element subsets of [m]
-with Grundy domination numbers at most m and binom(m,2), while their strong product
-has a legal sequence of length binom(m,5). The resulting ratio grows without bound.
-A second elementary argument proves gamma_gr(H_N) = floor((N+1)/3)+3 for every N >= 6.
-Its product with the octahedron supplies a 114-vertex counterexample at N=19.
+- `paper/main.tex`, `paper/figures/`: the LaTeX source and the three figures; `paper/main.pdf` the compiled paper (9 pages, single column).
+- `dist/`: the paper as `GrundyStrongProduct_final2.pdf`, its source zip and the arXiv tarball.
+- `checks/c/grundy_bfs.c`: the Grundy domination number of H_N (N <= 63) and of the octahedron by breadth-first search over dominated sets.
+- `checks/python/check_paper.py`: the finite statements of the paper from the definitions: the incidence matrices and ranks of Section 2 for m <= 9, the formula for H_N up to N = 24 by a different search, the sequences of Lemma 5.2 and Proposition 4.1 up to N = 64, and Example 5.3.
+- `run_all.sh`: runs both.
 
-Both general theorems have complete written proofs. Their proofs use no unproved
-external theorem or computer enumeration. The incidence method is credited to
-Alon's classical work; its adaptation here requires exact neighbourhood support.
+## Running the checks
 
-Complete ZIP: https://github.com/creelie/Paper_1/releases/download/v1.2.0/Paper_1_Annals_submission_v1.2.0.zip
+    ./run_all.sh
 
-## Submission files
+Requirements: a C compiler and python3 (standard library only). About half a minute.
 
-- `Paper_1_Annals.pdf`: PDF for the editorial system.
-- `manuscript/main.tex`, `references.bib`, `main.bbl`: complete manuscript sources.
-- `manuscript/figures/`: vector PDF figures and their TikZ sources.
-- `submission/COVER-LETTER.txt`: cover letter prepared for Annals.
-- `submission/PORTAL-METADATA.md`: title, abstract, keywords and author details.
-- `submission/SUBMISSION-NOTES.md`: current submission route and author declarations.
-- `PROOF-REVIEW.md`: proof checks, scope and editorial assessment.
-- `lean/`: the separate certificate for N=21, pinned to Lean 4.34.1.
-- `verification/current/`: current verification outputs; other verification files came from the input archive.
-- `provenance/INPUT.json`: input archive, hashes and earlier publication links.
+## Releases
 
-This revision is published on Zenodo: https://doi.org/10.5281/zenodo.23607502 .
-The complete submission ZIP is created only after that publication was confirmed.
-The earlier DOI below identifies version 1.0.0.
+Releases are published by the workflow `release.yml` from the Actions tab.
+Each release carries the paper files of `dist/`.
 
-The fresh Lean build and 25-declaration axiom audit passed. See `FORMAL-STATUS.md`.
+| Release | DOI |
+| --- | --- |
+| v2.0.0 (this revision) | to be recorded |
+| v1.3.0 | [10.5281/zenodo.23629621](https://doi.org/10.5281/zenodo.23629621) |
+| v1.2.0 | [10.5281/zenodo.23607502](https://doi.org/10.5281/zenodo.23607502) |
 
-## Reproduce
+## Author
 
-Python 3, TeX Live or MiKTeX with `aomart`, and Lean 4.34.1 suffice. No Python
-third-party package or Mathlib dependency is needed for mathematical verification.
+Deep Bhattacharjee, Formerly, Electro-Gravitational Space Propulsion Laboratory (EGSPL), Bhubaneswar, Odisha 751030, India; Formerly, University of Calcutta, Senate House, 87/1 College Street, Kolkata 700073, West Bengal, India.
+Emails: d.bhattacharjee@erl-forschung.de, itsdeep@live.com, egspl@proton.me (for questions about this repository).
+ORCID: 0000-0003-0466-750X.
 
-```text
-python -X utf8 scripts/verify.py
-python -X utf8 scripts/verify.py --lean
-python -X utf8 scripts/build_manuscript.py
-```
+## Licence
 
-Use `--lake` and `--tex-bin` if the executables are outside PATH. A clean Lean
-certificate build can be substantially slower than the Python checks. It verifies
-N=21 only; neither general theorem has been formalized in this development.
-
-## Publication history
-
-Original preprint: https://hexagonmath.org/2610.00494v1
-
-Original computational archive (v1.0.0): https://doi.org/10.5281/zenodo.23378021
-
-Submission repository: https://github.com/creelie/Paper_1
-
-The repository's existing MIT licence is preserved. AI assistance is disclosed
-with specific proof locations in the manuscript. The package has not been
-submitted to a journal. Editorial acceptance and an independent referee report
-are not established by formatting or the checks in this repository.
+MIT, see `LICENSE`.

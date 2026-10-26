@@ -1,48 +1,28 @@
 {
-  "title": "Unbounded strong-product ratios for the Grundy domination number — submission package",
+  "title": "Unbounded strong-product ratios for the Grundy domination number: paper and checking programs",
   "upload_type": "software",
-  "description": "<p>Unbounded strong-product ratios for the Grundy domination number. Hexagon/Overleaf and Journal of Combinatorial Theory, Series B submission preparation, version 1.3.0. The reviewed folder Paper_1 package contains the article PDF, a minimal compilable TeX ZIP, AI provenance, Hexagon fields, journal details, an unsent cover letter with editable source, and an author-prepared AI disclosure. All PDFs have no row or margin line numbers. No journal submission or acceptance is claimed.</p><p>The paper proves that strong-product ratios for the Grundy domination number are unbounded, using an explicit two-field incidence construction. It also determines an all-parameter graph family and supplies a 114-vertex counterexample to multiplicativity. The general proofs are elementary and independent of finite computation.</p><p>Verification scope: The Lean certificate verifies the original finite N=21 counterexample. The general unbounded-ratio theorem and all-parameter formula are written proofs, not a general Lean formalisation.</p><p>Original preprint: https://hexagonmath.org/2610.00494v1. Earlier manuscript/source DOI: 10.5281/zenodo.23607502. Original attribution and component licences are preserved. Human-understanding and mixed-text declarations record the submitting author's explicit statement on 25 October 2026. The standalone AI declaration is author-prepared, not an official signed publisher form.</p>",
+  "description": "<p>Final revision of the paper, single column, 9 pages, with its LaTeX source and the programs that recompute its small cases. The paper disproves the conjecture of Bresar, Bujtas, Gologranc, Klavzar, Kosmrlj, Patkos, Tuza and Vizer (2016) that the Grundy domination number of a strong product equals the product of the Grundy domination numbers of its factors, and shows that the ratio is unbounded: graphs on the five-element subsets of an m-element set, bounded through incidence matrices over the fields with two and three elements, give a ratio of at least (m-2)(m-3)(m-4)/(60m). It also computes the Grundy domination number of the graph H_N on {0, ..., N-1} with u and v adjacent when |u-v| = 2 (mod 3), namely floor((N+1)/3)+3 for N >= 6, so that the strong product of H_N with the octahedron is a counterexample for N = 19 (114 vertices) and for every N >= 21. Every statement is proved by hand; no statement rests on the programs.</p><p>The counterexample was first made public on 14 October 2026 as release v1.0.0 of creelie/grundy-strong-product (10.5281/zenodo.23378021). An earlier and incomplete version of the paper appeared on Hexagon as hexagon:2610.00494; the revisions v1.2.0 and v1.3.0 of this repository are archived as 10.5281/zenodo.23607502 and 10.5281/zenodo.23629621.</p>",
   "creators": [
     {
       "name": "Bhattacharjee, Deep",
       "orcid": "0000-0003-0466-750X",
-      "affiliation": "Formerly, Electro-Gravitational Space Propulsion Laboratory (EGSPL), Bhubaneswar, Odisha 751030, India"
+      "affiliation": "Formerly, Electro-Gravitational Space Propulsion Laboratory (EGSPL), Bhubaneswar, Odisha 751030, India; Formerly, University of Calcutta, Senate House, 87/1 College Street, Kolkata 700073, West Bengal, India"
     }
   ],
-  "version": "1.3.0",
-  "access_right": "open",
-  "license": "MIT",
   "keywords": [
     "Grundy domination number",
     "strong product",
-    "dominating sequences",
-    "finite-field incidence matrices",
-    "graph products",
+    "dominating sequence",
+    "incidence matrix",
     "05C69",
     "05C76"
   ],
+  "license": "mit-license",
   "related_identifiers": [
-    {
-      "identifier": "https://hexagonmath.org/2610.00494v1",
-      "relation": "isNewVersionOf",
-      "scheme": "url"
-    },
-    {
-      "identifier": "10.5281/zenodo.23378021",
-      "relation": "isNewVersionOf",
-      "scheme": "doi"
-    },
-    {
-      "identifier": "https://github.com/creelie/Paper_1",
-      "relation": "isSupplementTo",
-      "scheme": "url"
-    },
-    {
-      "identifier": "10.5281/zenodo.23607502",
-      "scheme": "doi",
-      "relation": "isSupplementTo"
-    }
+    {"identifier": "https://hexagonmath.org/2610.00494", "scheme": "url", "relation": "isNewVersionOf"},
+    {"identifier": "10.5281/zenodo.23629621", "scheme": "doi", "relation": "isNewVersionOf"},
+    {"identifier": "10.5281/zenodo.23607502", "scheme": "doi", "relation": "isNewVersionOf"},
+    {"identifier": "10.5281/zenodo.23378021", "scheme": "doi", "relation": "isNewVersionOf"}
   ],
-  "publication_date": "2026-10-25",
-  "notes": "Component licence notices in the original repository remain authoritative. The article is already available under the existing Hexagon CC BY 4.0 record. New package DOI is assigned by Zenodo after the GitHub release; no earlier DOI is reused as the new release DOI."
+  "access_right": "open"
 }
