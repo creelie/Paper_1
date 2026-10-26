@@ -12,6 +12,7 @@ license: MIT
 repository-code: "https://github.com/creelie/Paper_1"
 url: "https://github.com/creelie/Paper_1/releases/tag/v2.0.0"
 version: 2.0.0
+doi: 10.5281/zenodo.23659882
 date-released: 2026-10-26
 keywords:
   - Grundy domination number
