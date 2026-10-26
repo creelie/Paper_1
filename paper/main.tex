@@ -1,4 +1,4 @@
-\documentclass[11pt,a4paper]{article}
+\documentclass[11pt,a4paper,reqno]{amsart}
 
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -8,6 +8,7 @@
 \usepackage[margin=28mm]{geometry}
 \usepackage{xurl}
 \usepackage[hidelinks]{hyperref}
+\usepackage{orcidlink}
 \usepackage{microtype}
 
 \newtheorem{theorem}{Theorem}[section]
@@ -28,38 +29,36 @@
 \newcommand{\F}{\mathbb{F}}
 \newcommand{\Z}{\mathbb{Z}}
 
-\title{Unbounded strong-product ratios for the Grundy domination number}
+\title[Strong-product ratios for the Grundy domination number]{Unbounded strong-product ratios for the Grundy domination number}
 
-\author{Deep Bhattacharjee\thanks{Corresponding author. Email: \href{mailto:d.bhattacharjee@erl-forschung.de}{d.bhattacharjee@erl-forschung.de}, \href{mailto:itsdeep@live.com}{itsdeep@live.com}, \href{mailto:egspl@proton.me}{egspl@proton.me}. ORCID: \href{https://orcid.org/0000-0003-0466-750X}{0000-0003-0466-750X}.}\\[2pt]
-\normalsize Formerly, Electro-Gravitational Space Propulsion Laboratory (EGSPL),\\
-\normalsize Bhubaneswar, Odisha 751030, India\\[1pt]
-\normalsize Formerly, University of Calcutta, Senate House, 87/1 College Street,\\
-\normalsize Kolkata 700073, West Bengal, India}
+\author{Deep Bhattacharjee\,\orcidlink{0000-0003-0466-750X}}
+\address{Formerly, Electro-Gravitational Space Propulsion Laboratory (EGSPL), Bhubaneswar, Odisha 751030, India}
+\address{Formerly, University of Calcutta, Senate House, 87/1 College Street, Kolkata 700073, West Bengal, India}
+\email{d.bhattacharjee@erl-forschung.de}
+\email{itsdeep@live.com}
+\email{egspl@proton.me}
+\thanks{\sloppy Corresponding author: Deep Bhattacharjee. Email: \href{mailto:d.bhattacharjee@erl-forschung.de}{d.bhattacharjee@erl-forschung.de}, \href{mailto:itsdeep@live.com}{itsdeep@live.com}, \href{mailto:egspl@proton.me}{egspl@proton.me}; ORCID \href{https://orcid.org/0000-0003-0466-750X}{0000-0003-0466-750X}.}
 
+\subjclass[2020]{05C69; 05C76}
+\keywords{Grundy domination number; strong product; dominating sequence; incidence matrix}
 \date{26 October 2026}
 
 \begin{document}
-
-\maketitle
 
 \begin{abstract}
 \itshape
 A sequence of vertices of a graph is legal when every vertex in it dominates some vertex that none of the earlier ones dominated, and the Grundy domination number of the graph is the length of its longest legal sequence. In the strong product of two graphs, two vertices are adjacent when each coordinate is equal or adjacent in its factor. It has been known since 2016 that the Grundy domination number of a strong product is at least the product of the Grundy domination numbers of the two factors, and it was conjectured, by Bre\v{s}ar, Bujt\'as, Gologranc, Klav\v{z}ar, Ko\v{s}mrlj, Patk\'os, Tuza and Vizer, that equality always holds. We show that the conjecture is false, and false by an unbounded factor: for every number $C$ there are graphs whose strong product has Grundy domination number more than $C$ times the product of the two factors. The graphs are built on the five-element subsets of an $m$-element set, with adjacency decided by the size of the intersection; incidence matrices over the fields with two and three elements bound the two factors by $m$ and $\binom m2$, while the diagonal of the product is an independent set of size $\binom m5$. We also compute the Grundy domination number of the graph on $\{0,\dots,N-1\}$ in which $u$ and $v$ are adjacent when $|u-v|\equiv2\pmod3$: it is $\lfloor(N+1)/3\rfloor+3$ for every $N\ge6$. Its strong product with the octahedron has a legal sequence of length $N$, so the conjecture already fails for $N=19$, on a graph with $114$ vertices, and for every $N\ge21$. Every statement is proved by hand.
 \end{abstract}
 
-\medskip
-\noindent\textbf{Keywords.} Grundy domination number; strong product; dominating sequence; incidence matrix.
+\maketitle
 
-\smallskip
-\noindent\textbf{MSC 2020.} 05C69; 05C76.
+
 
 \medskip
-\begin{center}
-\begin{minipage}{0.92\textwidth}
+\begin{quote}
 \small\sloppy
 \noindent\textbf{Note.} The counterexample of this paper was first made public on 14 October 2026, as release \texttt{v1.0.0} of the repository \url{https://github.com/creelie/grundy-strong-product}, archived on Zenodo as \href{https://doi.org/10.5281/zenodo.23378021}{10.5281/zenodo.23378021}. An earlier and incomplete version of the paper appeared on Hexagon on 23 October 2026 as the preprint \texttt{hexagon:2610.00494}, available at \url{https://hexagonmath.org/2610.00494}. That version gave one counterexample, the strong product of the octahedron with the graph $H_{21}$ on $21$ vertices, and relied on a computer certificate for the Grundy domination number of $H_{21}$. The revisions that followed are archived on Zenodo as \href{https://doi.org/10.5281/zenodo.23607502}{10.5281/zenodo.23607502} and \href{https://doi.org/10.5281/zenodo.23629621}{10.5281/zenodo.23629621}, in the repository \url{https://github.com/creelie/Paper_1}. This version is complete and self-contained: the Grundy domination number of $H_N$ is computed by hand for every $N\ge6$, the ratio is shown to be unbounded, the scope of each result is stated, no statement rests on a computer, and the only unrefereed source it depends on is the withdrawn proof claim that it mentions for the record. The source of this revision is in the repository named in the data availability statement at the end, archived on Zenodo as \href{https://doi.org/10.5281/zenodo.23659882}{10.5281/zenodo.23659882} (concept \href{https://doi.org/10.5281/zenodo.23607651}{10.5281/zenodo.23607651}), together with programs that recompute the small cases.
-\end{minipage}
-\end{center}
+\end{quote}
 
 \section{Introduction}\label{sec:intro}
 
@@ -331,6 +330,7 @@ Which graphs $G$ satisfy Conjecture~\ref{conj} for every $H$? All forests do~\ci
 \smallskip
 \noindent\textbf{Data availability.} \url{https://github.com/creelie/Paper_1} (release \texttt{v2.0.0}, archived on Zenodo as \href{https://doi.org/10.5281/zenodo.23659882}{10.5281/zenodo.23659882}) holds the source of this paper and programs that recompute $\ggr(H_N)$ for small $N$ and check the sequences of Section~\ref{sec:family}; the paper does not depend on them.
 
+\begingroup\sloppy\emergencystretch=3em\hbadness=5000
 \begin{thebibliography}{99}
 
 \bibitem{Alon}
@@ -358,5 +358,6 @@ B.~Bre\v{s}ar, T.~Gologranc, M.~Milani\v{c}, D.~F.~Rall and R.~Rizzi, Dominating
 R.~Herrman and S.~G.~Z.~Smith, A proof of the Grundy domination strong product conjecture, \href{https://arxiv.org/abs/2212.04565v2}{arXiv:2212.04565} (2022), withdrawn in version 2 (12 January 2023).
 
 \end{thebibliography}
+\endgroup
 
 \end{document}

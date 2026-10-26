@@ -34,7 +34,7 @@ shown to be unbounded, and nothing rests on a computer.
 
 ## Layout
 
-- `paper/main.tex`, `paper/figures/`: the LaTeX source and the three figures; `paper/main.pdf` the compiled paper (9 pages, single column).
+- `paper/main.tex`, `paper/figures/`: the LaTeX source and the three figures; `paper/main.pdf` the compiled paper (9 pages, amsart, single column).
 - `dist/`: the paper as `GrundyStrongProduct_final2.pdf`, its source zip and the arXiv tarball.
 - `checks/c/grundy_bfs.c`: the Grundy domination number of H_N (N <= 63) and of the octahedron by breadth-first search over dominated sets.
 - `checks/python/check_paper.py`: the finite statements of the paper from the definitions: the incidence matrices and ranks of Section 2 for m <= 9, the formula for H_N up to N = 24 by a different search, the sequences of Lemma 5.2 and Proposition 4.1 up to N = 64, and Example 5.3.
