@@ -1,4 +1,4 @@
-Deep Bhattacharjee, *Unbounded strong-product ratios for the Grundy domination number*. Final revision, single column, 9 pages.
+Deep Bhattacharjee, *Unbounded strong-product ratios for the Grundy domination number*. Final revision, single column (amsart), 9 pages.
 
 The paper disproves the conjecture of Brešar, Bujtás, Gologranc, Klavžar, Košmrlj, Patkós, Tuza
 and Vizer (2016) that the Grundy domination number of a strong product equals the product of
