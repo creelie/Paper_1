@@ -53,7 +53,7 @@ Each release carries the paper files of `dist/`.
 
 | Release | DOI |
 | --- | --- |
-| v2.0.0 (this revision) | to be recorded |
+| v2.0.0 (this revision) | [10.5281/zenodo.23659882](https://doi.org/10.5281/zenodo.23659882) (concept [10.5281/zenodo.23607651](https://doi.org/10.5281/zenodo.23607651)) |
 | v1.3.0 | [10.5281/zenodo.23629621](https://doi.org/10.5281/zenodo.23629621) |
 | v1.2.0 | [10.5281/zenodo.23607502](https://doi.org/10.5281/zenodo.23607502) |
 
