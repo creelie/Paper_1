@@ -4,17 +4,18 @@ title: "Unbounded strong-product ratios for the Grundy domination number: paper 
 authors:
   - family-names: Bhattacharjee
     given-names: Deep
-    affiliation: "Formerly, Electro-Gravitational Space Propulsion Laboratory (EGSPL), Bhubaneswar, Odisha 751030, India; Formerly, University of Calcutta, Senate House, 87/1 College Street, Kolkata 700073, West Bengal, India"
+    affiliation: "Formerly, Electro-Gravitational Space Propulsion Laboratory (EGSPL), Bhubaneswar, Odisha 751030, India; Formerly, University of Calcutta (Heramba Chandra College), 23/49 Gariahat Road, Golpark, Kolkata 700029, West Bengal, India"
     email: d.bhattacharjee@erl-forschung.de
     orcid: "https://orcid.org/0000-0003-0466-750X"
 type: software
 license: MIT
 repository-code: "https://github.com/creelie/Paper_1"
-url: "https://github.com/creelie/Paper_1/releases/tag/v2.0.1"
-version: 2.0.1
-date-released: 2026-10-26
+url: "https://github.com/creelie/Paper_1/releases/tag/v2.1.0"
+version: 2.1.0
+date-released: 2026-10-30
 keywords:
   - Grundy domination number
   - strong product
   - dominating sequence
   - incidence matrix
+  - minimum rank

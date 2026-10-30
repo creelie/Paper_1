@@ -1,6 +1,7 @@
 /* grundy_bfs.c: exact Grundy domination number by breadth-first search over dominated sets.
  *
- *   grundy_bfs N      the graph H_N on 0, ..., N-1 (N <= 63): u and v adjacent when |u-v| = 2 (mod 3)
+ *   grundy_bfs N [r]  the graph H^r_N on 0, ..., N-1 (N <= 63, r in {1, 2}, default 2): u and v
+ *                     adjacent when |u-v| = r (mod 3)
  *   grundy_bfs oct    the octahedron K_{2,2,2} on 0, ..., 5: i and i+3 are the non-adjacent pairs
  *
  * Layer k is the set of vertex sets dominated by the legal sequences of length k: layer 0 is {empty},
@@ -28,15 +29,17 @@ static int insert(uint64_t x) { /* 1 if x is new; open addressing, keys stored a
 }
 
 int main(int argc, char **argv) {
-  if (argc != 2) { fprintf(stderr, "usage: grundy_bfs N | oct\n"); return 2; }
+  if (argc != 2 && argc != 3) { fprintf(stderr, "usage: grundy_bfs N [r] | oct\n"); return 2; }
   int oct = strcmp(argv[1], "oct") == 0, N = oct ? 6 : atoi(argv[1]);
+  int r = argc == 3 ? atoi(argv[2]) : 2;
   if (N < 1 || N > 63) { fprintf(stderr, "N must be between 1 and 63\n"); return 2; }
+  if (r != 1 && r != 2) { fprintf(stderr, "r must be 1 or 2\n"); return 2; }
   uint64_t nb[64];
   for (int v = 0; v < N; v++) {
     nb[v] = 1ULL << v;
     for (int u = 0; u < N; u++) {
       int d = u > v ? u - v : v - u;
-      if (u != v && (oct ? d != 3 : d % 3 == 2)) nb[v] |= 1ULL << u;
+      if (u != v && (oct ? d != 3 : d % 3 == r)) nb[v] |= 1ULL << u;
     }
   }
   cap = N <= 45 ? 1ULL << 24 : N <= 55 ? 1ULL << 26 : 1ULL << 28; /* at most half full below */
@@ -47,7 +50,10 @@ int main(int argc, char **argv) {
   size_t nc = 1, nn, total = 1;
   cur[0] = 0;
   int layer = 0;
-  printf("%s: layer sizes 1", oct ? "K_{2,2,2}" : argv[1]);
+  char name[32];
+  if (oct) snprintf(name, sizeof name, "K_{2,2,2}");
+  else snprintf(name, sizeof name, "H^%d_%d", r, N);
+  printf("%s: layer sizes 1", name);
   for (;;) {
     nn = 0;
     memset(tab, 0, cap * sizeof *tab);
@@ -72,6 +78,6 @@ int main(int argc, char **argv) {
     printf(", %zu", nn);
     uint64_t *t = cur; cur = nxt; nxt = t; nc = nn;
   }
-  printf("\n%s: %zu dominated sets in all; Grundy domination number %d\n", oct ? "K_{2,2,2}" : argv[1], total, layer);
+  printf("\n%s: %zu dominated sets in all; Grundy domination number %d\n", name, total, layer);
   return 0;
 }
