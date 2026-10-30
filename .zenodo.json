@@ -1,28 +1,55 @@
 {
   "title": "Unbounded strong-product ratios for the Grundy domination number: paper and checking programs",
   "upload_type": "software",
-  "description": "<p>Final revision of the paper, single column (amsart), 9 pages, with its LaTeX source and the programs that recompute its small cases. The paper disproves the conjecture of Bresar, Bujtas, Gologranc, Klavzar, Kosmrlj, Patkos, Tuza and Vizer (2016) that the Grundy domination number of a strong product equals the product of the Grundy domination numbers of its factors, and shows that the ratio is unbounded: graphs on the five-element subsets of an m-element set, bounded through incidence matrices over the fields with two and three elements, give a ratio of at least (m-2)(m-3)(m-4)/(60m). It also computes the Grundy domination number of the graph H_N on {0, ..., N-1} with u and v adjacent when |u-v| = 2 (mod 3), namely floor((N+1)/3)+3 for N >= 6, so that the strong product of H_N with the octahedron is a counterexample for N = 19 (114 vertices) and for every N >= 21. Every statement is proved by hand; no statement rests on the programs.</p><p>The counterexample was first made public on 14 October 2026 as release v1.0.0 of creelie/grundy-strong-product (10.5281/zenodo.23378021). An earlier and incomplete version of the paper appeared on Hexagon as hexagon:2610.00494; the revisions v1.2.0 and v1.3.0 of this repository are archived as 10.5281/zenodo.23607502 and 10.5281/zenodo.23629621.</p>",
+  "description": "<p>Revision of 30 October 2026 of the paper, single column (amsart), 9 pages, with its LaTeX source and the programs that recompute its small cases. The paper disproves the conjecture of Bresar, Bujtas, Gologranc, Klavzar, Kosmrlj, Patkos, Tuza and Vizer (2016) that the Grundy domination number of a strong product equals the product of the Grundy domination numbers of its factors, and shows that the ratio is unbounded: graphs on the five-element subsets of an m-element set, bounded through incidence matrices over the fields with two and three elements, give a ratio of at least (m-2)(m-3)(m-4)/(60m). It proves that the Grundy domination number of a strong product is at most the product of the minimum ranks of the factors over any field, so the conjecture holds whenever both factors attain their minimum rank over a common field. It computes the Grundy domination numbers of the graphs H^1_N and H^2_N on {0, ..., N-1} with u and v adjacent when |u-v| = 1 or 2 (mod 3), namely floor(N/3)+2 and floor((N+1)/3)+3, so that their strong products with the octahedron are counterexamples for N = 11, 13, 14 and N >= 15, respectively N = 19 and N >= 21; the smallest has 66 vertices. Every statement is proved by hand; no statement rests on the programs.</p><p>The counterexample was first made public on 14 October 2026 as release v1.0.0 of creelie/grundy-strong-product (10.5281/zenodo.23378021). Earlier versions of the paper appeared on Hexagon as hexagon:2610.00494 and hexagon:2610.00494v2; the releases v1.2.0, v1.3.0 and v2.0.0 of this repository are archived as 10.5281/zenodo.23607502, 10.5281/zenodo.23629621 and 10.5281/zenodo.23659882.</p>",
   "creators": [
     {
       "name": "Bhattacharjee, Deep",
       "orcid": "0000-0003-0466-750X",
-      "affiliation": "Formerly, Electro-Gravitational Space Propulsion Laboratory (EGSPL), Bhubaneswar, Odisha 751030, India; Formerly, University of Calcutta, Senate House, 87/1 College Street, Kolkata 700073, West Bengal, India"
+      "affiliation": "Formerly, Electro-Gravitational Space Propulsion Laboratory (EGSPL), Bhubaneswar, Odisha 751030, India; Formerly, University of Calcutta (Heramba Chandra College), 23/49 Gariahat Road, Golpark, Kolkata 700029, West Bengal, India"
     }
   ],
   "keywords": [
     "Grundy domination number",
     "strong product",
     "dominating sequence",
-    "incidence matrix",
+    "minimum rank",
     "05C69",
-    "05C76"
+    "05C76",
+    "05C50"
   ],
   "license": "mit-license",
   "related_identifiers": [
-    {"identifier": "https://hexagonmath.org/2610.00494", "scheme": "url", "relation": "isNewVersionOf"},
-    {"identifier": "10.5281/zenodo.23629621", "scheme": "doi", "relation": "isNewVersionOf"},
-    {"identifier": "10.5281/zenodo.23607502", "scheme": "doi", "relation": "isNewVersionOf"},
-    {"identifier": "10.5281/zenodo.23378021", "scheme": "doi", "relation": "isNewVersionOf"}
+    {
+      "identifier": "https://hexagonmath.org/2610.00494v2",
+      "scheme": "url",
+      "relation": "isNewVersionOf"
+    },
+    {
+      "identifier": "10.5281/zenodo.23659882",
+      "scheme": "doi",
+      "relation": "isNewVersionOf"
+    },
+    {
+      "identifier": "https://hexagonmath.org/2610.00494",
+      "scheme": "url",
+      "relation": "isNewVersionOf"
+    },
+    {
+      "identifier": "10.5281/zenodo.23629621",
+      "scheme": "doi",
+      "relation": "isNewVersionOf"
+    },
+    {
+      "identifier": "10.5281/zenodo.23607502",
+      "scheme": "doi",
+      "relation": "isNewVersionOf"
+    },
+    {
+      "identifier": "10.5281/zenodo.23378021",
+      "scheme": "doi",
+      "relation": "isNewVersionOf"
+    }
   ],
   "access_right": "open"
 }

@@ -1,6 +1,6 @@
 # Unbounded strong-product ratios for the Grundy domination number
 
-Deep Bhattacharjee. Final revision, 26 October 2026.
+Deep Bhattacharjee. Revision of 30 October 2026 (release v2.1.0).
 
 A sequence of vertices of a graph is legal when every vertex in it dominates some vertex
 that none of the earlier ones dominated, and the Grundy domination number of the graph is
@@ -8,17 +8,16 @@ the length of its longest legal sequence. Brešar, Bujtás, Gologranc, Klavžar,
 Patkós, Tuza and Vizer proved in 2016 that the Grundy domination number of a strong product
 is at least the product of the Grundy domination numbers of the two factors, and conjectured
 that equality always holds. The paper shows that the conjecture is false, and false by an
-unbounded factor: for every number C there are graphs whose strong product has Grundy
-domination number more than C times the product of the two factors. The graphs are built on
-the five-element subsets of an m-element set, with adjacency decided by the size of the
-intersection; incidence matrices over the fields with two and three elements bound the two
-factors by m and binom(m,2), while the diagonal of the product is an independent set of
-size binom(m,5). The paper also computes the Grundy domination number of the graph H_N on
-{0, ..., N-1} in which u and v are adjacent when |u-v| = 2 (mod 3): it is floor((N+1)/3)+3
-for every N >= 6. Its strong product with the octahedron has a legal sequence of length N,
-so the conjecture already fails for N = 19, on a graph with 114 vertices, and for every
-N >= 21. Every statement is proved by hand; the programs here only recompute the small
-cases, and no statement of the paper rests on them.
+unbounded factor. The smallest counterexample it gives is the strong product of the
+octahedron with the graph H^1_11 on {0, ..., 10} in which u and v are adjacent when
+|u-v| = 1 (mod 3): 66 vertices, factors with Grundy domination numbers 2 and 5, and a legal
+sequence of length 11 in the product. The paper computes the Grundy domination numbers of
+H^1_N and H^2_N (adjacency |u-v| = 1 or 2 mod 3) for every N, namely floor(N/3)+2 and
+floor((N+1)/3)+3. In the other direction it proves that the Grundy domination number of a
+strong product is at most the product of the minimum ranks of the factors over any field,
+so the conjecture holds whenever both factors attain their minimum rank over a common field.
+Every statement is proved by hand; the programs here only recompute the small cases, and no
+statement of the paper rests on them.
 
 The counterexample was first made public on 14 October 2026 as release v1.0.0 of
 [creelie/grundy-strong-product](https://github.com/creelie/grundy-strong-product), archived
@@ -26,25 +25,25 @@ on Zenodo as [10.5281/zenodo.23378021](https://doi.org/10.5281/zenodo.23378021).
 and incomplete version of the paper appeared on Hexagon as
 [hexagon:2610.00494](https://hexagonmath.org/2610.00494) on 23 October 2026; it gave one
 counterexample and relied on a computer certificate for the Grundy domination number of
-H_21. The revisions that followed are the releases v1.2.0 and v1.3.0 of this repository,
-archived as [10.5281/zenodo.23607502](https://doi.org/10.5281/zenodo.23607502) and
-[10.5281/zenodo.23629621](https://doi.org/10.5281/zenodo.23629621). This revision replaces
-them: the Grundy domination number of H_N is computed by hand for every N >= 6, the ratio is
-shown to be unbounded, and nothing rests on a computer.
+H_21. The releases v1.2.0, v1.3.0, v2.0.0 and v2.0.1 of this repository followed; v2.0.0
+was posted on Hexagon as [hexagon:2610.00494v2](https://hexagonmath.org/2610.00494v2).
+This revision (v2.1.0) adds the rank bound for strong products, the second family H^1_N
+and the 66-vertex counterexample.
 
 ## Layout
 
 - `paper/main.tex`, `paper/figures/`: the LaTeX source and the three figures; `paper/main.pdf` the compiled paper (9 pages, amsart, single column).
 - `dist/`: the paper as `GrundyStrongProduct_final2.pdf`, its source zip and the arXiv tarball.
-- `checks/c/grundy_bfs.c`: the Grundy domination number of H_N (N <= 63) and of the octahedron by breadth-first search over dominated sets.
-- `checks/python/check_paper.py`: the finite statements of the paper from the definitions: the incidence matrices and ranks of Section 2 for m <= 9, the formula for H_N up to N = 24 by a different search, the sequences of Lemma 5.2 and Proposition 4.1 up to N = 64, and Example 5.3.
-- `run_all.sh`: runs both.
+- `checks/c/grundy_bfs.c`: the Grundy domination number of H^r_N (N <= 63, r = 1, 2) and of the octahedron by breadth-first search over dominated sets.
+- `checks/c/product_exact.c`: the Grundy domination number of the product of the octahedron with H^r_N (N <= 21) by a memoised search; it recomputes the values of Remark 6.6.
+- `checks/python/check_paper.py`: the finite statements of the paper from the definitions: Lemma 2.1, Theorem 1.4 and Example 2.2 on small graphs, the incidence matrices and ranks of Section 3 for m <= 9, the formulas for H^1_N and H^2_N up to N = 27 by a different search, the hypotheses of Lemma 6.1, the sequences of Lemmas 6.3, 6.4 and Proposition 5.1 up to N = 64, and Example 6.5.
+- `run_all.sh`: runs all three.
 
 ## Running the checks
 
     ./run_all.sh
 
-Requirements: a C compiler and python3 (standard library only). About half a minute.
+Requirements: a C compiler with `unsigned __int128` (gcc or clang) and python3 (standard library only). About half a minute.
 
 ## Releases
 
@@ -53,14 +52,16 @@ Each release carries the paper files of `dist/`.
 
 | Release | DOI |
 | --- | --- |
-| v2.0.0 (this revision) | [10.5281/zenodo.23659882](https://doi.org/10.5281/zenodo.23659882) (concept [10.5281/zenodo.23607651](https://doi.org/10.5281/zenodo.23607651)) |
+| v2.1.0 (this revision) | assigned on publication (concept [10.5281/zenodo.23607651](https://doi.org/10.5281/zenodo.23607651)) |
+| v2.0.1 | assigned on publication |
+| v2.0.0 | [10.5281/zenodo.23659882](https://doi.org/10.5281/zenodo.23659882) |
 | v1.3.0 | [10.5281/zenodo.23629621](https://doi.org/10.5281/zenodo.23629621) |
 | v1.2.0 | [10.5281/zenodo.23607502](https://doi.org/10.5281/zenodo.23607502) |
 
 ## Author
 
-Deep Bhattacharjee, Formerly, Electro-Gravitational Space Propulsion Laboratory (EGSPL), Bhubaneswar, Odisha 751030, India; Formerly, University of Calcutta, Senate House, 87/1 College Street, Kolkata 700073, West Bengal, India.
-Emails: d.bhattacharjee@erl-forschung.de, itsdeep@live.com, egspl@proton.me (for questions about this repository).
+Deep Bhattacharjee, Formerly, Electro-Gravitational Space Propulsion Laboratory (EGSPL), Bhubaneswar, Odisha 751030, India; Formerly, University of Calcutta (Heramba Chandra College), 23/49 Gariahat Road, Golpark, Kolkata 700029, West Bengal, India.
+Emails: d.bhattacharjee@erl-forschung.de, itsdeep@live.com, egspl@proton.me (GitHub-related contact; GitHub [creelie](https://github.com/creelie)).
 ORCID: 0000-0003-0466-750X.
 
 ## Licence
