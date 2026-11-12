@@ -21,4 +21,4 @@ Every statement is proved in the paper. The programs recompute the finite cases.
 - `search/`: the exact C solver and the Python search scripts.
 - `run_all.sh`: runs all Lean and Julia checks.
 
-Concept DOI: [10.5281/zenodo.23607651](https://doi.org/10.5281/zenodo.23607651).
+v3.0.0 DOI: [10.5281/zenodo.24175963](https://doi.org/10.5281/zenodo.24175963). Concept DOI: [10.5281/zenodo.23607651](https://doi.org/10.5281/zenodo.23607651).
