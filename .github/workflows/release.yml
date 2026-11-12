@@ -1,8 +1,8 @@
 name: release
 
-# Run by hand from the Actions tab after the pull request is merged. It runs the C and Python
-# checks, then publishes a GitHub release with the paper files in dist/ and the
-# notes in .github/RELEASE_NOTES.md.
+# Run by hand from the Actions tab after the pull request is merged. It runs the Lean and Julia
+# checks, then publishes a GitHub release with paper/GrundyPaper.pdf and the notes in
+# .github/RELEASE_NOTES.md.
 
 on:
   workflow_dispatch:
@@ -10,7 +10,7 @@ on:
       tag:
         description: "Release tag, e.g. v1.0.0"
         required: true
-        default: "v2.1.0"
+        default: "v3.0.0"
       target:
         description: "Branch or commit to tag"
         required: true
@@ -18,7 +18,7 @@ on:
       title:
         description: "Release title"
         required: true
-        default: "Unbounded strong-product ratios for the Grundy domination number"
+        default: "Grundy Domination of Graph Products and Minimum Rank"
 
 permissions:
   contents: write
@@ -31,11 +31,15 @@ jobs:
       - uses: actions/checkout@v4
         with:
           ref: ${{ inputs.target }}
-      - name: Install Python
+      - uses: julia-actions/setup-julia@v2
+        with:
+          version: "1.11"
+      - name: Install Lean
         run: |
-          sudo apt-get update
-          sudo apt-get install -y python3
-      - name: C and Python checks
+          curl -sSfL https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh -o elan-init.sh
+          bash elan-init.sh -y --default-toolchain leanprover/lean4:v4.24.0
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - name: Lean and Julia checks
         run: ./run_all.sh
 
   release:
@@ -45,13 +49,8 @@ jobs:
       - uses: actions/checkout@v4
         with:
           ref: ${{ inputs.target }}
-      - name: Check the paper files
-        run: |
-          for f in dist/GrundyStrongProduct_final2.pdf \
-                   dist/GrundyStrongProduct_final2-tex.zip \
-                   dist/GrundyStrongProduct_final2-arxiv.tar.gz; do
-            test -s "$f" || { echo "missing $f"; exit 1; }
-          done
+      - name: Check the paper file
+        run: test -s paper/GrundyPaper.pdf
       - name: Publish the release
         env:
           GH_TOKEN: ${{ github.token }}
@@ -59,7 +58,7 @@ jobs:
           TARGET: ${{ inputs.target }}
           TITLE: ${{ inputs.title }}
         run: |
-          gh release create "$TAG" dist/GrundyStrongProduct_final2* \
+          gh release create "$TAG" paper/GrundyPaper.pdf \
             --target "$TARGET" \
             --title "$TAG: $TITLE" \
             --notes-file .github/RELEASE_NOTES.md
