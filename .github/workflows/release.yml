@@ -18,7 +18,7 @@ on:
       title:
         description: "Release title"
         required: true
-        default: "Grundy Domination of Graph Products and Minimum Rank"
+        default: "Grundy Domination of Kneser Graphs and Graph Products"
 
 permissions:
   contents: write

@@ -5,6 +5,8 @@ ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 cd "$ROOT"
 echo "== Lean"
 lean lean/GrundyCert.lean
+lean lean/KneserSequences.lean
 echo "== Julia"
 julia julia/checks.jl
+julia julia/kneser_checks.jl data
 echo "all checks passed"

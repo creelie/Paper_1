@@ -1,7 +1,7 @@
 {
-  "title": "Grundy Domination of Graph Products and Minimum Rank: paper, Lean certificate and Julia checks",
+  "title": "Grundy Domination of Kneser Graphs and Graph Products: paper, Lean certificates and Julia checks",
   "upload_type": "software",
-  "description": "<p>The paper proves that the Grundy domination number of a strong product is at most the product of the minimum ranks of the factors over any field, determines the Grundy domination number of strong products of cycles, paths, complete bipartite graphs and Kneser graphs K(n,2) (in particular the torus value (k-2)(l-2)), and the Grundy total domination number of direct products of cycles, forests and complete graphs. It shows that the strong-product and direct-product conjectures of Bresar et al. are false with unbounded ratios, and that incidence graphs of projective planes answer Question 1 of Bresar, Henning and Rall negatively. The release contains the paper, a Lean 4 certificate of the finite statements (core library, decide) and Julia programs that recompute the numerical statements.</p>",
+  "description": "<p>The paper determines the Grundy domination number of Kneser graphs K(n,r) whenever a prime power at least r divides n-2r, settling the conjecture of Campelo and Severin for all but finitely many n for each r, and of five further small Kneser graphs. It also proves that the Grundy domination number of a strong product is at most the product of the minimum ranks of the factors over any field, determines the Grundy domination number of strong products of cycles, paths, complete bipartite graphs and Kneser graphs K(n,2) (in particular the torus value (k-2)(l-2)), and the Grundy total domination number of direct products of cycles, forests and complete graphs. It shows that the strong-product and direct-product conjectures of Bresar et al. are false with unbounded ratios, and that incidence graphs of projective planes answer Question 1 of Bresar, Henning and Rall negatively. The release contains the paper, a Lean 4 certificates of the finite statements (core library, decide) and Julia programs that recompute the numerical statements.</p>",
   "creators": [
     {
       "name": "Bhattacharjee, Deep",
@@ -11,6 +11,7 @@
   ],
   "keywords": [
     "Grundy domination number",
+    "Kneser graphs",
     "graph products",
     "minimum rank",
     "05C69",
