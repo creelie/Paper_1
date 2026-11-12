@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "If you use this work, please cite it as below."
-title: "Grundy Domination of Graph Products and Minimum Rank: paper, Lean certificate and Julia checks"
+title: "Grundy Domination of Kneser Graphs and Graph Products: paper, Lean certificates and Julia checks"
 authors:
   - family-names: Bhattacharjee
     given-names: Deep
@@ -18,5 +18,6 @@ keywords:
   - Grundy domination number
   - strong product
   - dominating sequence
+  - Kneser graphs
   - graph products
   - minimum rank
