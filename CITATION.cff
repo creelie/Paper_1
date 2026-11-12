@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "If you use this work, please cite it as below."
-title: "Unbounded strong-product ratios for the Grundy domination number: paper and checking programs"
+title: "Grundy Domination of Graph Products and Minimum Rank: paper, Lean certificate and Julia checks"
 authors:
   - family-names: Bhattacharjee
     given-names: Deep
@@ -10,13 +10,13 @@ authors:
 type: software
 license: MIT
 repository-code: "https://github.com/creelie/Paper_1"
-url: "https://github.com/creelie/Paper_1/releases/tag/v2.1.0"
-version: 2.1.0
-doi: 10.5281/zenodo.23791279
-date-released: 2026-10-30
+url: "https://github.com/creelie/Paper_1/releases/tag/v3.0.0"
+version: 3.0.0
+doi: 10.5281/zenodo.23607651
+date-released: 2026-11-12
 keywords:
   - Grundy domination number
   - strong product
   - dominating sequence
-  - incidence matrix
+  - graph products
   - minimum rank
