@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "If you use this work, please cite it as below."
-title: "Grundy Domination of Kneser Graphs and Graph Products: paper, Lean certificates and Julia checks"
+title: "Grundy domination checks: exact solver, Julia programs and Lean 4 certificates"
 authors:
   - family-names: Bhattacharjee
     given-names: Deep
@@ -10,10 +10,9 @@ authors:
 type: software
 license: MIT
 repository-code: "https://github.com/creelie/Paper_1"
-url: "https://github.com/creelie/Paper_1/releases/tag/v3.0.0"
-version: 3.0.0
-doi: 10.5281/zenodo.23607651
-date-released: 2026-11-12
+url: "https://github.com/creelie/Paper_1/releases/tag/v3.1.0"
+version: 3.1.0
+date-released: 2026-11-14
 keywords:
   - Grundy domination number
   - strong product

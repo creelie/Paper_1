@@ -1,7 +1,7 @@
 {
-  "title": "Grundy Domination of Kneser Graphs and Graph Products: paper, Lean certificates and Julia checks",
+  "title": "Grundy domination checks: exact solver, Julia programs and Lean 4 certificates",
   "upload_type": "software",
-  "description": "<p>The paper determines the Grundy domination number of Kneser graphs K(n,r) whenever a prime power at least r divides n-2r, settling the conjecture of Campelo and Severin for all but finitely many n for each r, and of five further small Kneser graphs. It also proves that the Grundy domination number of a strong product is at most the product of the minimum ranks of the factors over any field, determines the Grundy domination number of strong products of cycles, paths, complete bipartite graphs and Kneser graphs K(n,2) (in particular the torus value (k-2)(l-2)), and the Grundy total domination number of direct products of cycles, forests and complete graphs. It shows that the strong-product and direct-product conjectures of Bresar et al. are false with unbounded ratios, and that incidence graphs of projective planes answer Question 1 of Bresar, Henning and Rall negatively. The release contains the paper, a Lean 4 certificates of the finite statements (core library, decide) and Julia programs that recompute the numerical statements.</p>",
+  "description": "<p>Code for the Grundy domination number of graphs and graph products. It contains an exact C solver for the Grundy domination number with Python search drivers, two Julia programs that recompute ranks of closed-neighbourhood pattern matrices over finite fields and check dominating sequences (strong and direct products of cycles, the graphs H_N, Kneser graphs K(n,r), incidence graphs of projective planes), and Lean 4 files (core library only) that certify the finite dominating sequences and rank factorizations by kernel evaluation. No paper is included.</p>",
   "creators": [
     {
       "name": "Bhattacharjee, Deep",
@@ -19,5 +19,6 @@
     "05C50"
   ],
   "license": "mit-license",
-  "access_right": "open"
+  "access_right": "open",
+  "version": "v3.1.0"
 }

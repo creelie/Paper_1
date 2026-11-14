@@ -1,8 +1,8 @@
 name: release
 
 # Run by hand from the Actions tab after the pull request is merged. It runs the Lean and Julia
-# checks, then publishes a GitHub release with paper/GrundyPaper.pdf and the notes in
-# .github/RELEASE_NOTES.md.
+# checks, then publishes a code-only GitHub release with the notes in .github/RELEASE_NOTES.md.
+# No paper PDF or TeX is attached or kept in the repository.
 
 on:
   workflow_dispatch:
@@ -10,7 +10,7 @@ on:
       tag:
         description: "Release tag, e.g. v1.0.0"
         required: true
-        default: "v3.0.0"
+        default: "v3.1.0"
       target:
         description: "Branch or commit to tag"
         required: true
@@ -18,7 +18,7 @@ on:
       title:
         description: "Release title"
         required: true
-        default: "Grundy Domination of Kneser Graphs and Graph Products"
+        default: "Grundy domination checks (code only)"
 
 permissions:
   contents: write
@@ -49,8 +49,9 @@ jobs:
       - uses: actions/checkout@v4
         with:
           ref: ${{ inputs.target }}
-      - name: Check the paper file
-        run: test -s paper/GrundyPaper.pdf
+      - name: Check that no paper file is present
+        run: |
+          if git ls-files | grep -E '\.(pdf|tex)$'; then echo "paper files must not be released"; exit 1; fi
       - name: Publish the release
         env:
           GH_TOKEN: ${{ github.token }}
@@ -58,7 +59,7 @@ jobs:
           TARGET: ${{ inputs.target }}
           TITLE: ${{ inputs.title }}
         run: |
-          gh release create "$TAG" paper/GrundyPaper.pdf \
+          gh release create "$TAG" \
             --target "$TARGET" \
             --title "$TAG: $TITLE" \
             --notes-file .github/RELEASE_NOTES.md
